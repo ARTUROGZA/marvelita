@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla Detalle</title>
+
+    <!-- Reproducir sonido automáticamente -->
+    <audio id="sound" src="gay.mp3"></audio>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #000428, #004e92);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            height: 100vh;
+        }
+
+        .imagen {
+            width: 70%;
+            max-width: 350px;
+            margin-top: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .texto {
+            margin-top: 20px;
+            font-size: 22px;
+            padding: 0 20px;
+        }
+
+        .volver {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ffcc00;
+            color: #000;
+            border: none;
+            padding: 14px 22px;
+            border-radius: 12px;
+            font-size: 18px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.2s ease;
+        }
+
+        .volver:hover {
+            transform: scale(1.08);
+            background-color: #ffe066;
+        }
+    </style>
+
+</head>
+<body>
+
+    <script>
+        // Reproducir sonido al entrar
+        window.onload = function() {
+            document.getElementById("sound").play();
+        };
+    </script>
+
+    <!-- Imagen principal -->
+    <img src="sca.jpeg" class="imagen">
+
+    <!-- Texto debajo de la imagen -->
+    <p class="texto">
+        Eres un trol pick pa no se porque juegas con ella lit su ult es la mas countereable y en si no hace nada ademas no sabes apuntar
+    </p>
+
+    <!-- Botón para regresar -->
+    <button class="volver" onclick="location.href='pantalla2.html'">
+        Volver
+    </button>
+
+</body>
+</html>
