@@ -61,11 +61,12 @@
 <body>
 
     <script>
-        // Reproducir sonido al entrar
-        window.onload = function() {
-            document.getElementById("sound").play();
-        };
-    </script>
+    document.addEventListener("click", function () {
+        var sonido = document.getElementById("sound");
+        sonido.play();
+    }, { once: true });
+</script>
+
 
     <!-- Imagen principal -->
     <img src="door.jpeg" class="imagen">
@@ -82,4 +83,5 @@
 
 </body>
 </html>
+
 
